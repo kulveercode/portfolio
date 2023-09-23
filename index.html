@@ -12,12 +12,14 @@
         <div class="container">
             <nav>
                 <img src="/images/logo.png" class="logo" alt="logo" />
-                <ul>
-                    <li><a href="#">Home</a></li>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
                 </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
                 <p>Front-end Developer</p>
@@ -83,11 +85,11 @@
                     </div>
                 </div>
                 <div class="work">
-                    <img src="/images/project5.png" alt="">
+                    <img src="/images/project2.png" alt="">
                     <div class="layer">
-                        <h3>Contact App</h3>
+                        <h3>Golf Website</h3>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni omnis fuga veritatis incidunt labore tempore!</p>
-                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                        <a href="https://golfwebsite.netlify.app/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
                     </div>
                 </div>
                 <div class="work">
@@ -95,7 +97,31 @@
                     <div class="layer">
                         <h3>Contact App</h3>
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni omnis fuga veritatis incidunt labore tempore!</p>
-                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                        <a href="https://foodcafe-kk.netlify.app/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="/images/project4.png" alt="">
+                    <div class="layer">
+                        <h3>Youtube Clone</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni omnis fuga veritatis incidunt labore tempore!</p>
+                        <a href="https://youtube-kk.netlify.app/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="/images/project5.png" alt="">
+                    <div class="layer">
+                        <h3>Contact App</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni omnis fuga veritatis incidunt labore tempore!</p>
+                        <a href="https://agecalculator-kk.netlify.app/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="/images/project6.png" alt="">
+                    <div class="layer">
+                        <h3>Calculator</h3>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni omnis fuga veritatis incidunt labore tempore!</p>
+                        <a href="https://calculatorkulveer.netlify.app/" target="_blank"><i class="fas fa-external-link-alt"></i></a>
                     </div>
                 </div>
             </div>
@@ -108,7 +134,7 @@
     <div class="container">
         <div class="row">
             <div class="contact-left">
-                <h1 class="sub-title">Contact me</h1>
+                <h1 class="sub-title">Contact Me</h1>
                 <p><i class="fas fa-paper-plane"></i>contact@gmail.com</p>
                 <p><i class="fas fa-phone-square-alt"></i>7017078186</p>
                 <div class="social-icons">
@@ -129,6 +155,9 @@
             </div>
         </div>
     </div>
+    <div class="copyright">
+        <p>©2023 Made with <i class="fas fa-heart"></i> by Kulveer. | All Rights Reserved</p>
+    </div>
 </div>
 
     <script>
@@ -146,6 +175,17 @@
             document.getElementById(tabname).classList.add("active-tab");
         }
 
+
+        var sidemeu = document.getElementById("sidemenu");
+
+        function openmenu(){
+         sidemeu.style.right = "4px";
+        }
+        function closemenu(){
+        sidemeu.style.right = "-200px";
+        }
+
     </script>
+
 </body>
 </html>
