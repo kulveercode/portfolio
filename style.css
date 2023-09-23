@@ -289,6 +289,11 @@ form .btn2 {
     color: #ff004f;
 }
 
+#msg {
+    color: #61b752;
+    display: block;
+}
+
 
 /* media queries for small screen */
 nav .fas {
@@ -297,7 +302,7 @@ nav .fas {
 
 @media only screen and (max-width:600px) {
     #header {
-        background-image: url(/images/back2\ -\ Copy.png);
+        background-image: url(/images/back2\ -\ mobile.png);
     }   
     #header {
         flex-basis: 100%;
